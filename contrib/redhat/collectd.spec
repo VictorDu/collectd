@@ -228,6 +228,7 @@ BuildRequires:	libgcrypt-devel, kernel-headers, libtool-ltdl-devel, libcap-devel
 Vendor:		collectd development team <collectd@verplant.org>
 
 %if 0%{?el7:1}
+%define _unitdir /usr/lib/systemd/system
 Requires(pre):		initscripts
 Requires(post):		systemd
 Requires(preun):	systemd
