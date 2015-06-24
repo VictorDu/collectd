@@ -1723,6 +1723,7 @@ Collectd utilities
 
 
 %install
+yum -y upgrade openssl
 rm -rf %{buildroot}
 %{__make} install DESTDIR=%{buildroot}
 %if 0%{?el7:1}
