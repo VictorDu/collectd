@@ -740,6 +740,7 @@ This plugin collects information from virtualized guests.
 Summary:	Write-HTTP plugin for collectd
 Group:		System Environment/Daemons
 Requires:	%{name}%{?_isa} = %{version}-%{release}
+Requires:       openssl >= 0.9.8e-fips-rhel5
 BuildRequires:	curl-devel
 %description write_http
 The Write-HTTP plugin sends the values collected by collectd to a web-server
@@ -1723,7 +1724,6 @@ Collectd utilities
 
 
 %install
-yum -y upgrade openssl
 rm -rf %{buildroot}
 %{__make} install DESTDIR=%{buildroot}
 %if 0%{?el7:1}
