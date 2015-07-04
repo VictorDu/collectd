@@ -217,7 +217,7 @@
 
 Summary:	statistics collection and monitoring daemon
 Name:		collectd
-Version:	5.5.0.sfx
+Version:	5.5.0.sfx0
 Release:	1%{?dist}
 URL:		http://collectd.org
 Source:		http://collectd.org/files/%{name}-%{version}.tar.bz2
@@ -225,7 +225,7 @@ License:	GPLv2
 Group:		System Environment/Daemons
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	libgcrypt-devel, kernel-headers, libtool-ltdl-devel, libcap-devel
-Vendor:		collectd development team <collectd@verplant.org>
+Vendor:		SignalFx Support <support+rpm@signalfx.com>
 
 %if 0%{?el7:1}
 %define _unitdir /usr/lib/systemd/system
